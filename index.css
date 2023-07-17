@@ -1,0 +1,193 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 550px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background: url("images/header-bg.png"), black no-repeat;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title,
+.header-subtitle {
+    color: white;
+}
+
+.header-title {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+a:link, 
+a:visited {
+    text-decoration: none;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input,
+.search-bar button {
+    border: 1px solid lightgray;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 9px 13px;
+    border-radius: 6px 0 0 6px;
+    background-image: url("images/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+}
+
+.search-bar input[type=text] {
+   padding-left: 30px;  
+}
+
+.search-bar button {
+    width: 20%;
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+    background-color: #F9FAFB;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    color: #F9FAFB;
+    background-color: lightgray;
+}
+
+/* MOVIE LIST */
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.film-icon,
+.not-found,
+.empty-watchlist {
+    padding-top: 35vh;
+}
+
+.not-found,
+.empty-watchlist-text,
+.empty-watchlist-link {
+    text-align: center;
+    color: #DFDDDD;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.empty-watchlist-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    color: black;
+    font-size: 14px;
+}
+
+.movie-container {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.movie-container,
+.movie-text-row-one,
+.movie-text-row-two {
+    display: flex;
+    align-items: center;
+}
+
+.movie-poster img,
+.poster-unavailable {
+    width: 100px;
+    margin: 0 20px 0 30px;
+}
+
+.movie-poster img {
+    border-radius: 2px;
+}
+
+.poster-unavailable {
+    font-size: 12px;
+    text-align: center;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.movie-rating,
+.movie-runtime,
+.movie-genre,
+.add-btn,
+.remove-btn {
+    font-size: 12px;
+    color: #111827;
+}
+
+.movie-rating {
+    margin-left: 3px;
+}
+
+.movie-runtime,
+.movie-genre {
+    margin-right: 20px;
+}
+
+.add-btn,
+.remove-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-btn span,
+.remove-btn span,
+.empty-watchlist-link span {
+    color: white;
+    background-color: black;
+    padding: 0 4px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.movie-plot {
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 20px;
+}
